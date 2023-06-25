@@ -1,0 +1,21 @@
+{   "parent": "block/block",
+    "textures": {
+        "texture": "block/chorus_flower",
+        "bottom": "block/chorus_plant",
+        "particle": "block/chorus_flower"
+    },
+    "elements": [
+        {
+            "from": [ 0, 0, 0 ],
+            "to": [ 16, 16, 16 ],
+            "faces": {
+                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "cullface": "up" },
+                "down":  { "uv": [ 16, 16, 0, 0 ], "texture": "#bottom", "cullface": "down" },
+                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "cullface": "north" },
+                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "cullface": "south" },
+                "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "cullface": "west" },
+                "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#texture", "cullface": "east" }
+            }
+        }
+    ]
+}

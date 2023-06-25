@@ -1,0 +1,12 @@
+{
+    "multipart": [
+        {
+            "apply": [
+        		{ "model": "block/tall_grass" },
+            	{ "model": "block/tall_grass", "y": 90 },
+        		{ "model": "block/tall_grass2" },
+            	{ "model": "block/tall_grass2", "y": 90 }
+        	]
+       	}
+    ]
+}

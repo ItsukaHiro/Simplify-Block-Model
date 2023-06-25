@@ -1,0 +1,34 @@
+{
+    "multipart": [
+        {   "when": { "north":false, "south": false, "east": false, "west": false, "up": false, "down": false },
+            "apply": { "model": "block/chorus_plant" }
+        },
+        {   "when": { "north": true, "south": false },
+            "apply": { "model": "block/chorus_plant_side" }
+        },
+        {   "when": { "east": true, "west": false },
+            "apply": { "model": "block/chorus_plant_side", "y": 90, "uvlock": true }
+        },
+        {   "when": { "south": true, "north": false },
+            "apply": { "model": "block/chorus_plant_side", "y": 180, "uvlock": true }
+        },
+        {   "when": { "west": true, "east": false },
+            "apply": { "model": "block/chorus_plant_side", "y": 270, "uvlock": true }
+        },
+        {   "when": { "up": true, "down": false },
+            "apply": { "model": "block/chorus_plant_side", "x": 270, "uvlock": true }
+        },
+        {   "when": { "down": true, "up": false },
+            "apply": { "model": "block/chorus_plant_side", "x": 90, "uvlock": true }
+        },
+        {   "when": { "north": true, "south": true },
+            "apply": { "model": "block/chorus_plant_doubleside" }
+        },
+        {   "when": { "east": true, "west": true },
+            "apply": { "model": "block/chorus_plant_doubleside", "y": 90, "uvlock": true }
+        },
+        {   "when": { "down": true, "up": true },
+            "apply": { "model": "block/chorus_plant_doubleside", "x": 90, "uvlock": true }
+        }
+    ]
+}

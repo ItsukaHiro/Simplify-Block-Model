@@ -1,0 +1,108 @@
+{
+    "multipart": [
+        {   
+            "when": { "up": "true"},
+            "apply": { "model": "block/sandstone_wall_post" }
+        },
+        {   "when": { "OR": [
+                {"north": "low", "south": "none" },
+                {"north": "low", "south": "tall" }
+            ]},
+            "apply": { "model": "block/sandstone_wall_side", "uvlock": true }
+        },
+        {   "when": { "OR": [
+                {"east": "low", "west": "none" },
+                {"east": "low", "west": "tall" }
+            ]},
+            "apply": { "model": "block/sandstone_wall_side", "y": 90, "uvlock": true }
+        },
+        {   "when": { "OR": [
+                {"south": "low", "north": "none" },
+                {"south": "low", "north": "tall" }
+            ]},
+            "apply": { "model": "block/sandstone_wall_side", "y": 180, "uvlock": true }
+        },
+        {   "when": { "OR": [
+                {"west": "low", "east": "none" },
+                {"west": "low", "east": "tall" }
+            ]},
+            "apply": { "model": "block/sandstone_wall_side", "y": 270, "uvlock": true }
+        },
+        {   "when": { "OR": [
+                {"north": "tall", "south": "none" },
+                {"north": "tall", "south": "low" }
+            ]},
+            "apply": { "model": "block/sandstone_wall_side_tall", "uvlock": true }
+        },
+        {   "when": { "OR": [
+                {"east": "tall", "west": "none" },
+                {"east": "tall", "west": "low" }
+            ]},
+            "apply": { "model": "block/sandstone_wall_side_tall", "y": 90, "uvlock": true }
+        },
+        {   "when": { "OR": [
+                {"south": "tall", "north": "none" },
+                {"south": "tall", "north": "low" }
+            ]},
+            "apply": { "model": "block/sandstone_wall_side_tall", "y": 180, "uvlock": true }
+        },
+        {   "when": { "OR": [
+                {"west": "tall", "east": "none" },
+                {"west": "tall", "east": "low" }
+            ]},
+            "apply": { "model": "block/sandstone_wall_side_tall", "y": 270, "uvlock": true }
+        },
+        {   "when": { "north": "low", "south": "low" },
+            "apply": { "model": "block/sandstone_wall_doubleside", "uvlock": true }
+        },
+        {   "when": { "east": "low", "west": "low" },
+            "apply": { "model": "block/sandstone_wall_doubleside", "y": 90, "uvlock": true }
+        },
+        {   "when": { "north": "tall", "south": "tall" },
+            "apply": { "model": "block/sandstone_wall_doubleside_tall", "uvlock": true }
+        },
+        {   "when": { "east": "tall", "west": "tall" },
+            "apply": { "model": "block/sandstone_wall_doubleside_tall", "y": 90, "uvlock": true }
+        },
+        {   "when": { "OR": [
+                {"north": "low", "south": "none" },
+                {"north": "tall", "south": "none" }
+            ]},
+            "apply": { "model": "block/sandstone_wall_side_under", "uvlock": true }
+        },
+        {   "when": { "OR": [
+                {"east": "low", "west": "none" },
+                {"east": "tall", "west": "none" }
+            ]},
+            "apply": { "model": "block/sandstone_wall_side_under", "y": 90, "uvlock": true }
+        },
+        {   "when": { "OR": [
+                {"south": "low", "north": "none" },
+                {"south": "tall", "north": "none" }
+            ]},
+            "apply": { "model": "block/sandstone_wall_side_under", "y": 180, "uvlock": true }
+        },
+        {   "when": { "OR": [
+                {"west": "low", "east": "none" },
+                {"west": "tall", "east": "none" }
+            ]},
+            "apply": { "model": "block/sandstone_wall_side_under", "y": 270, "uvlock": true }
+        },
+        {   "when": { "OR": [
+                {"north": "low", "south": "low" },
+                {"north": "low", "south": "tall" },
+                {"north": "tall", "south": "low" },
+                {"north": "tall", "south": "tall" }
+            ]},
+            "apply": { "model": "block/sandstone_wall_doubleside_under", "uvlock": true }
+        },
+        {   "when": { "OR": [
+                {"east": "low", "west": "low" },
+                {"east": "low", "west": "tall" },
+                {"east": "tall", "west": "low" },
+                {"east": "tall", "west": "tall" }
+            ]},
+            "apply": { "model": "block/sandstone_wall_doubleside_under", "y": 90, "uvlock": true }
+        }
+    ]
+}

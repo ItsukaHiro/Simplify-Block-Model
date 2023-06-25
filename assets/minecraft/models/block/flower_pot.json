@@ -1,0 +1,27 @@
+{
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "block/flower_pot",
+        "flowerpot": "block/flower_pot",
+        "dirt": "block/dirt"
+    },
+    "elements": [
+        {   "from": [ 5, 0, 5 ],
+            "to": [ 11, 6, 11 ],
+            "faces": {
+                "down":  { "uv": [ 5, 10, 11, 16 ], "texture": "#flowerpot", "cullface": "down" },
+                "up":    { "uv": [ 5, 5, 11, 11 ], "texture": "#flowerpot" },
+                "north": { "uv": [ 5, 10, 11, 16 ], "texture": "#flowerpot" },
+                "south": { "uv": [ 5, 10, 11, 16 ], "texture": "#flowerpot" },
+                "west":  { "uv": [ 5, 10, 11, 16 ], "texture": "#flowerpot" },
+                "east":  { "uv": [ 5, 10, 11, 16 ], "texture": "#flowerpot" }
+            }
+        },
+        {   "from": [ 5.99, 0, 5.99 ],
+            "to": [ 10.01, 6.001, 10.01 ],
+            "faces": {
+                "up":   { "uv": [ 6, 6, 10, 10 ], "texture": "#dirt" }
+            }
+        }
+    ]
+}
